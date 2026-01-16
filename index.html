@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon vs. Dalat Infographic</title>
+    <style>
+        :root {
+            --saigon-orange: #FF5722;
+            --dalat-blue: #009688;
+            --dark: #2C3E50;
+            --light: #ECF0F1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: var(--dark);
+        }
+
+        header {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .side {
+            flex: 1;
+            min-width: 300px;
+            padding: 2rem;
+        }
+
+        .saigon { border-top: 8px solid var(--saigon-orange); }
+        .dalat { border-top: 8px solid var(--dalat-blue); background-color: #f9fdfc; }
+
+        h2 { text-transform: uppercase; letter-spacing: 2px; text-align: center; }
+        .saigon h2 { color: var(--saigon-orange); }
+        .dalat h2 { color: var(--dalat-blue); }
+
+        .tagline {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .section { margin-bottom: 2rem; }
+        .section-title {
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .stat-value { font-size: 1.2rem; font-weight: bold; display: block; }
+        .stat-label { font-size: 0.75rem; color: #7f8c8d; text-transform: uppercase; }
+
+        ul { list-style: none; padding: 0; }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 0.95rem;
+        }
+
+        li::before { content: "• "; font-weight: bold; }
+        .saigon li::before { color: var(--saigon-orange); }
+        .dalat li::before { color: var(--dalat-blue); }
+
+        @media (max-width: 600px) {
+            .container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vietnam: Urban Heat vs. Mountain Chill</h1>
+    <p>A Quick Guide to Saigon & Dalat</p>
+</header>
+
+<div class="container">
+    <div class="side saigon">
+        <h2>Saigon</h2>
+        <p class="tagline">"The City That Never Sleeps"</p>
+        
+        <div class="stat-grid">
+            <div class="stat-card">
+                <span class="stat-value">28°C - 35°C</span>
+                <span class="stat-label">Avg. Temp</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">Energetic</span>
+                <span class="stat-label">Vibe</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Must-Visit Landmarks</div>
+            <ul>
+                <li><strong>Ben Thanh Market:</strong> Iconic central hub.</li>
+                <li><strong>Independence Palace:</strong> Historic landmark.</li>
+                <li><strong>Notre Dame Cathedral:</strong> French architecture.</li>
+                <li><strong>Landmark 81:</strong> Modern skyscraper views.</li>
+                <li><strong>Bui Vien:</strong> Vibrant nightlife center.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Local Experience</div>
+            <ul>
+                <li>Motorbike street tours at night.</li>
+                <li>Sidewalk iced coffee (Cà Phê Sữa Đá).</li>
+                <li>Street food: Com Tam (Broken Rice).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="side dalat">
+        <h2>Dalat</h2>
+        <p class="tagline">"The City of Eternal Spring"</p>
+
+        <div class="stat-grid">
+            <div class="stat-card">
+                <span class="stat-value">15°C - 24°C</span>
+                <span class="stat-label">Avg. Temp</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">Romantic</span>
+                <span class="stat-label">Vibe</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Must-Visit Landmarks</div>
+            <ul>
+                <li><strong>Xuan Huong Lake:</strong> The heart of the city.</li>
+                <li><strong>Valley of Love:</strong> Scenic hilly gardens.</li>
+                <li><strong>Crazy House:</strong> Surrealist architecture.</li>
+                <li><strong>Datanla Falls:</strong> Alpine coaster adventure.</li>
+                <li><strong>Linh Phuoc Pagoda:</strong> Intricate mosaic art.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Local Experience</div>
+            <ul>
+                <li>Waking up to mountain mist.</li>
+                <li>Visiting strawberry gardens.</li>
+                <li>Street food: Bánh Tráng Nướng (Vietnamese Pizza).</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; color: #7f8c8d; font-size: 0.8rem; padding-bottom: 2rem;">
+    Comparison: 300km Distance | ~6h Drive or 50min Flight
+</footer>
+
+</body>
+</html>
